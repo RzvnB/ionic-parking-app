@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives'])
+angular.module('app', ['ionic', 'LocalStorageModule', 'btford.socket-io', 'angularMoment'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -19,5 +19,22 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
   });
+})
+
+.config(function($stateProvider, $urlRouterProvider) {
+  $stateProvider
+
+  .state('dashboard', {
+    url: '/dashboard',
+    templateUrl: '/templates/dashboard.html'
+  })
+
+  .state('parking', {
+    url: '/parking',
+    templateUrl: '/templates/parking.html'
+  })
+
+  $urlRouterProvider.otherwise('/dashboard');
 })
