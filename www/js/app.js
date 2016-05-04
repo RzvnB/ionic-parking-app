@@ -20,6 +20,7 @@ angular.module('app', ['ionic', 'LocalStorageModule', 'btford.socket-io', 'angul
       StatusBar.styleDefault();
     }
 
+
   });
 })
 
