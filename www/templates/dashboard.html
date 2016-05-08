@@ -1,4 +1,13 @@
 <ion-view title="Dashboard" id="page1" ng-controller='DashboardController as dash_ctrl'>
+<<<<<<< HEAD
+<ion-nav-bar class="bar-dark"></ion-nav-bar>
+    <ion-content padding="true" style="background: url(img/PhUuIhNxTyuB2uoAQ4Zr_stock-photo-65232695.jpg) no-repeat center;background-size:cover;" scroll="false" class="has-header">
+        <ion-list>
+            <ion-item ng-repeat="parking in dash_ctrl.parkings" ng-click="enterParking(parking)" >
+                <i class="icon ion-model-s"></i>
+                {{parking}}             
+                <span class="badge {{dash_ctrl.color}}">{{dash_ctrl.badge}}</span>
+=======
 <ion-nav-bar class="bar-calm"></ion-nav-bar>
     <ion-content padding="true" class="has-header">
         <ion-list>
@@ -6,6 +15,7 @@
                 <i class="icon ion-model-s"></i>
                 {{parking}}
                 <span class="badge badge-assertive">0</span>
+>>>>>>> 97f100e96281528541d94798c026cb6ea71f0cb2
             </ion-item>
             <!-- <ion-item ui-sref="parcare1">
                 <i class="icon ion-model-s"></i>
