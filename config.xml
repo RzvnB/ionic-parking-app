@@ -7,7 +7,11 @@
   <author email="you@example.com" href="http://example.com.com/">
       Your Name Here
     </author>
+<<<<<<< HEAD
   <content src="index.html"/>
+=======
+  <content src="/templates/dashboard.html"/>
+>>>>>>> 97f100e96281528541d94798c026cb6ea71f0cb2
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
@@ -39,4 +43,8 @@
     <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
+<<<<<<< HEAD
 </widget>
+=======
+</widget>
+>>>>>>> 97f100e96281528541d94798c026cb6ea71f0cb2

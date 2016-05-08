@@ -20,6 +20,10 @@ angular.module('app', ['ionic', 'LocalStorageModule', 'btford.socket-io', 'angul
       StatusBar.styleDefault();
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 97f100e96281528541d94798c026cb6ea71f0cb2
   });
 })
 
@@ -38,9 +42,12 @@ angular.module('app', ['ionic', 'LocalStorageModule', 'btford.socket-io', 'angul
 
   $urlRouterProvider.otherwise('/dashboard');
 })
+<<<<<<< HEAD
 
 /*.controller('BadgeCtrl',[$scope,SocketService,function($scope,SocketService) {
     SocketService.on('connection',function(data){
       $scope.badge=data.number;
     })
   }])*/
+=======
+>>>>>>> 97f100e96281528541d94798c026cb6ea71f0cb2
